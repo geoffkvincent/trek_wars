@@ -44,6 +44,7 @@ const characters = (state = [], action) => {
   switch(action.type) {
     case 'SET_CHARACTERS':
       return action.characters;
+      // return state.filter(characters => characters.nerd_type !== action.type )
     case 'DELETE_CHARACTER':
       return state.filter(character => character.id !== action.character.id )
     case 'UPDATE_CHARACTER':

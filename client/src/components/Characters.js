@@ -11,6 +11,7 @@ class Characters extends React.Component {
 
   toggleNerds = () => {
     this.setState({ starwars: !this.state.starwars })
+    
   }
 
   render() {
@@ -21,7 +22,7 @@ class Characters extends React.Component {
           <StarwarsCharacters />
         </Segment>
       )
-    else
+    else 
       return(
         <Segment>
           <Button onClick={this.toggleNerds}>Toggle Star Wars</Button>
